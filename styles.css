@@ -12,12 +12,51 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.box {
-    display:flex;
+.sourceBox {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #AFD7FA;
+    border-radius: 10px;
+    margin: 1.5em;
+    padding: 2em;
+    height: 75px;
+    color: white;
 }
+
+.sourceName {
+    display: inline-flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+.sourceEmail {
+    display: inline-flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+.sourceInfo {
+    width: 250px;
+    height: 50px;
+}
+
+.addbutton {
+    background-color: #56C854;
+    text-align:center;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius: 10px;
+    margin:2%;
+    padding: 14px;
+    font-size: large;
+    width: 110px;
+    text-align: center;
+}
+
+
 .deletebutton {
     background-color: #FF7676;
     text-align:center;
@@ -28,14 +67,6 @@ body {
     margin:2%;
     padding: 14px;
     font-size: large;
-}
-.addbutton {
-    background-color: green;
-    text-align:center;
-    border:none;
-    color:white;
-    cursor:pointer;
-    border-radius: 10px;
 }
 
 .containerBox {
