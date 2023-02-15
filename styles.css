@@ -2,8 +2,11 @@
     color: #36476D;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+=======
+>>>>>>> c00cfa7 (updates: feb-14)
 }
 
 body {
