@@ -1,6 +1,6 @@
 import logo from './Components/logo.png';
 import './App.css';
-//import Form from './Components/Form';
+import Form from './Components/Form';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <div class="Header">
           <h1>Spectator's Sources</h1>
         </div>
-
+        <Form></Form>
     </div>
   );
 }
