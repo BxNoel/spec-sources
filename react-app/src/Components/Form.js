@@ -1,16 +1,16 @@
 function Form() {
     return (
-        <div class="sourceBox">
-            <div class="sourceName">
-                 <p>Source Name: </p>
-                <input class="sourceInfo" type="text" id="name"></input>
+        <form class="Form">
+            <div class="source-info">
+                <p>Source Name: </p>
             </div>
-             <div class="sourceEmail">
+            <input class="form-input" type="text" id="name"></input>
+            <div class="source-info">
                 <p>Source Email: </p>
-                <input class="sourceInfo" type="text" id="name"></input>
             </div>
-            <button class="addbutton">ADD</button>
-        </div>
+            <input class="form-input" type="text" id="name"></input>
+            <button class="form-button">ADD</button>
+        </form>
     );
 }
 
