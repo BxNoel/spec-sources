@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Table from './Componets/Table';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    
+    <div className="sourceBox">
+        <div className="sourceName">
+            <p>Source Name: </p>
+            <input class="sourceInfo" type="text" id="name"></input>
+        </div>
+        <div className="sourceEmail">
+            <p>Source Email: </p>
+            <input className="sourceInfo" type="text" id="name"></input>
+        </div>
+        <button className="addbutton">ADD</button>
     </div>
+
+    {/* This is the Table */}
+    <Table/>
+
+
+    </div>
+    
+  
   );
 }
 
