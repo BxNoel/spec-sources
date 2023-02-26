@@ -1,107 +1,116 @@
-.header{
-  color: #36476D;
-  display: flex;
-  justify-content: center;
-  font-weight: bolder;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 body {
   background-color: #E5E5E5;
   color:black;
   font-family: Arial, Helvetica, sans-serif
 }
 
-.sourceBox {
+.App {
+  padding: 4rem;
+}
+
+.App-logo {
+  justify-content: flex-start;
+  height: 6vmin;
+}
+
+.Header{
+  color: #36476D;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #AFD7FA;
-  border-radius: 10px;
-  margin: 1.5em;
-  padding: 2em;
-  height: 75px;
-  color: white;
-}
-
-.sourceName {
-  display: inline-flex;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-}
 
-.sourceEmail {
-  display: inline-flex;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-}
+  .Form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #AFD7FA;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    height: 140px;
+  }
+  
+  .source-info {
+    margin-left: 1rem;
+    margin-right: .25rem;
+    font-size: large;
+    font-weight: 800;
+    width: 36%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+  
+  .form-input {
+    border:0;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    background-color: white;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  .form-button {
+    background-color: #56C854;
+    color: #FFFFFF;
+    border-radius: 12px;
+    height: fit-content;
+    padding: 0.5rem 2rem;
+    border: none;
+    font-weight: 600;
+    margin: auto 0.5rem;
+    font-size: larger;
+  }
+  
+  .form-button:hover {
+    background-color: #45a043;
+    cursor: pointer;
+  }
 
-.sourceInfo {
-  width: 250px;
-  height: 50px;
-}
+  .deletebutton {
+    background-color: #FF7676;
+    text-align:center;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius: 10px;
+    margin:2%;
+    padding: 14px;
+    font-size: larger;
+  }
 
-.addbutton {
-  background-color: #56C854;
-  text-align:center;
-  border:none;
-  color:white;
-  cursor:pointer;
-  border-radius: 10px;
-  margin:2%;
-  padding: 14px;
-  font-size: large;
-  width: 110px;
-  text-align: center;
-}
+  .containerBox {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3em;
+    padding: 10px;
+    height: 75px;
+  }
 
+  input {
+    border:none;
+  }
 
-.deletebutton {
-  background-color: #FF7676;
-  text-align:center;
-  border:none;
-  color:white;
-  cursor:pointer;
-  border-radius: 10px;
-  margin:2%;
-  padding: 14px;
-  font-size: larger;
-}
-
-.containerBox {
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  border-radius: 10px;
-  margin: 3em;
-  padding: 10px;
-  height: 75px;
-}
-
-input {
-  border:none;
-}
-
-.number {
-  flex: 0.5;
-  margin-left: 20px;
-  color: #36476D;
-  font-size: large;
-}
-
-.name{ 
-  flex: 1.5;
-  color: #36476D;
-  font-size: large;
-}
-
-.email{ 
-  flex: 1.5;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-  color: #828EA6;
-}
-
+  .number {
+    flex: 0.5;
+    margin-left: 20px;
+    color: #36476D;
+    font-size: large;
+  }
+  
+  .name{ 
+    flex: 1.5;
+    color: #36476D;
+    font-size: large;
+  }
+  
+  .email{ 
+    flex: 1.5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #828EA6;
+  }
