@@ -23,47 +23,95 @@ body {
 }
 
 .Form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #AFD7FA;
-  padding: 0.5rem 1.2rem;
-  border-radius: 25px;
-  height: 140px;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #AFD7FA;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    height: 140px;
+  }
+  
+  .source-info {
+    margin-left: 1rem;
+    margin-right: .25rem;
+    font-size: large;
+    font-weight: 800;
+    width: 36%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+  
+  .form-input {
+    border:0;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    background-color: white;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  .form-button {
+    background-color: #56C854;
+    color: #FFFFFF;
+    border-radius: 12px;
+    height: fit-content;
+    padding: 0.5rem 2rem;
+    border: none;
+    font-weight: 600;
+    margin: auto 0.5rem;
+    font-size: larger;
+  }
+  
+  .form-button:hover {
+    background-color: #45a043;
+    cursor: pointer;
+  }
 
-.source-info {
-  margin-left: 1rem;
-  margin-right: .25rem;
-  font-size: large;
-  font-weight: 800;
-  width: 36%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-}
+  .deletebutton {
+    background-color: #FF7676;
+    text-align:center;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius: 10px;
+    margin:2%;
+    padding: 14px;
+    font-size: larger;
+  }
 
-.form-input {
-  border:0;
-  padding: 0.5rem;
-  margin-right: 2rem;
-  background-color: white;
-  font-size: 1.2rem;
-  width: 100%;
-}
+  .containerBox {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3em;
+    padding: 10px;
+    height: 75px;
+  }
 
-.form-button {
-  background-color: #56C854;
-  color: #FFFFFF;
-  border-radius: 12px;
-  height: fit-content;
-  padding: 0.5rem 2rem;
-  border: none;
-  font-weight: 600;
-  margin: auto 0.5rem;
-  font-size: larger;
-}
+  input {
+    border:none;
+  }
 
-.form-button:hover {
-  background-color: #45a043;
-  cursor: pointer;
-}
+  .number {
+    flex: 0.5;
+    margin-left: 20px;
+    color: #36476D;
+    font-size: large;
+  }
+  
+  .name{ 
+    flex: 1.5;
+    color: #36476D;
+    font-size: large;
+  }
+  
+  .email{ 
+    flex: 1.5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #828EA6;
+  }
