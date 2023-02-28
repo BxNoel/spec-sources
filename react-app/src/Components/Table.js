@@ -1,14 +1,9 @@
-
-function Table(){
-
-    const sourceList = [{theName:"Presbo" , theEmail:"presbo@columbia.edu"},
-                        {theName:"John Jay Mouse", theEmail:"mouse@columbia.edu"},
-                        {theName:"Water Bottle Man", theEmail:"flipper@columbia.edu"}]
+function Table({handleDelete, sourceList}){
 
 return(    
     <div>
         {sourceList.map((SOURCE, index)=> (
-            <TableItem index ={index + 1} name ={SOURCE.theName} email = {SOURCE.theEmail} />
+            <TableItem index ={index} name ={SOURCE.theName} email = {SOURCE.theEmail} handleDelete={handleDelete}/>
         ))}
     </div>
 );
@@ -16,11 +11,11 @@ return(
 
 export default Table;
 
-function TableItem({index, name, email}){
+function TableItem({index, name, email, handleDelete}){
     return (
     <div className="containerBox">
        <div className="number">
-           <h2>{index}</h2>
+           <h2>{index + 1}</h2>
        </div>
        <div className="name">
            <h2>{name}</h2>
@@ -28,8 +23,8 @@ function TableItem({index, name, email}){
        <div className="email">
            <div>{email}</div>
        </div>
-       <button className="deletebutton">
-           <div> DELETE</div>
+       <button className="deletebutton" onClick={() => handleDelete(index)}>
+           <div>DELETE</div>
        </button>
      </div>
     )
