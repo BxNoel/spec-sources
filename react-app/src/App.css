@@ -37,7 +37,7 @@ body {
     margin-right: .25rem;
     font-size: large;
     font-weight: 800;
-    width: 36%;
+    width: 40%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
   }
@@ -78,6 +78,11 @@ body {
     margin:2%;
     padding: 14px;
     font-size: larger;
+  }
+
+  .deletebutton:hover {
+    cursor: pointer;
+    background-color: #e76a6a;
   }
 
   .containerBox {
