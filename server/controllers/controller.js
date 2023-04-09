@@ -9,7 +9,9 @@ module.exports = {
         res.json({"message": data.sources});
     },
     add_source: (req, res) => {
-        res.json({"message": "Adding"});
+        const source = {id: (data.sources.length + 1), name: req.params.name, email: req.params.email};
+        a = data.sources.concat(source);
+        res.json({"message": a});
     },
     delete_source: (req, res) => {
         r = data.sources.filter(source => source.id != req.params.id);
